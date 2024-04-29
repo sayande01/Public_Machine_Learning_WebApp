@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Apr 28 17:20:42 2024
+Created on Mon Apr 29 20:51:42 2024
 
 @author: Sayan De
 """
@@ -12,11 +12,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/USER/OneDrive/Desktop/Jupyter Notebook/Deploy ML/Multiple Disease Prediction/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/USER/OneDrive/Desktop/Jupyter Notebook/Deploy ML/Multiple Disease Prediction/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/USER/OneDrive/Desktop/Jupyter Notebook/Deploy ML/Multiple Disease Prediction/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
@@ -242,5 +242,20 @@ if (selected == "Parkinsons Prediction"):
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
     st.success(parkinsons_diagnosis)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
